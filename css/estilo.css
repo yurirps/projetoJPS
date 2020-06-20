@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.links{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    display: flex;
+}
+.links label{
+    padding: 10px 0;
+    flex-grow: 1;
+    cursor: pointer;
+    transition: all .4s;
+    text-align: center;
+    font-family: Arial;
+    font-size: 100%;
+    color: #fff;
+}
+
+.links label:hover{
+    background-color: rgba(255, 255, 255, .2);
+}
+
+.scroll{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.sections{
+    transition: all 0.4s ;
+}
+
+.scroll input{
+    display: none;
+}
+
+.bloco{
+    width: 100vw;
+    height: 100vw;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+
+
+#inicio{
+    background-image: url('C:/Users/Yuri/Documents/ProjetoJP/imagens/chef.jpg');
+}
+
+#gastronomia{
+    background-image: url('C:/Users/Yuri/Documents/ProjetoJP/imagens/cozinha.jpg');
+}
+
+#confeitaria{
+    background-image: url('C:/Users/Yuri/Documents/ProjetoJP/imagens/gastro.jpg');
+    
+}
+
+#projetos{
+    background-image: url('C:/Users/Yuri/Documents/ProjetoJP/imagens/home.jpg');
+}
+
+#contato{
+    background-image: url('C:/Users/Yuri/Documents/ProjetoJP/imagens/gastro.jpg');
+}
+
+
+#rd_gastronomia:checked ~.sections{
+    margin-top: -100vh;
+}
+
+#rd_confeitaria:checked ~.sections{
+    margin-top: -200vh;
+}
+
+#rd_projetos:checked ~ .sections{
+    margin-top: -300vh;
+}
+
+#rd_contato:checked ~ .sections{
+    margin-top: -400vh;
+}
